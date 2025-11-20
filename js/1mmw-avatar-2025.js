@@ -5,7 +5,7 @@ const downloadBtn = document.getElementById("downloadBtn");
 
 // Template
 const template = new Image();
-template.src = "assets/images/template_transparent.png";
+template.src = "assets/images/template_transparent_1.png";
 
 // Circle coordinates
 const circleX = 400;
