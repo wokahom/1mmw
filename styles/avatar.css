@@ -15,11 +15,11 @@ body {
 }
 
 .container {
-    width: 95%;
+    width: 90%;
     max-width: 450px;
     margin-top: 40px;
     margin-bottom: 40px;
-    padding: 20px;
+    padding: 4vw;
     background: rgba(240, 240, 240, 0.95);
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
@@ -35,6 +35,7 @@ body {
 canvas {
     width: 100%;
     height: auto;
+    max-height: 60vh;
 }
 
 input[type="file"] {
@@ -43,12 +44,12 @@ input[type="file"] {
 
 button {
     margin-top: 15px;
-    padding: 12px 20px;
+    padding: 1rem 1.5rem;
     background: #e53935;
     border: none;
     color: #fff;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 1.1rem;
     cursor: pointer;
 }
 
@@ -56,16 +57,48 @@ button:hover {
     background: #c62828;
 }
 
-/* Small screens */
-@media (max-width: 640px) {
-    .container {
-        padding: 15px;
-    }
-}
-
 /* Very small screens (mobile) */
 @media (min-width: 250px) and (max-width: 399px) {
     .container {
-        padding: 10px;
+         width: 65%;
+        padding: 1.5vw;
+    }
+    button {
+        font-size: 0.6rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .canvas-wrapper {
+        border-radius: 6px;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 2vw;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 0.6rem 1rem;
+    }
+
+    .canvas-wrapper {
+        border-radius: 8px;
+    }
+}
+
+/* Small tablets */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 3vw;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 0.8rem 1.2rem;
     }
 }
