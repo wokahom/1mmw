@@ -1,24 +1,32 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url("../assets/images/bg1.jpeg");
+    font-family: Arial, sans-serif;
+   
+}
+.background {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../assets/images/bg2.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
-    font-family: Arial, sans-serif;
-
+    
+}
+.content {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    color: rgb(245, 38, 38);
+    font-size: 2rem;
+    text-shadow: 1px 1px 4px black;
 }
 
 .container {
     width: 95%;
     max-width: 450px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin: auto;
     padding: 20px;
     background: rgba(240, 240, 240, 0.95);
     border-radius: 10px;
@@ -52,20 +60,3 @@ button {
     cursor: pointer;
 }
 
-button:hover {
-    background: #c62828;
-}
-
-/* Small screens */
-@media (max-width: 640px) {
-    .container {
-        padding: 15px;
-    }
-}
-
-/* Very small screens (mobile) */
-@media (min-width: 250px) and (max-width: 399px) {
-    .container {
-        padding: 10px;
-    }
-}
