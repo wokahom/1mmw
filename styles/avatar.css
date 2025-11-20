@@ -35,7 +35,7 @@ body {
 canvas {
     width: 100%;
     height: auto;
-    max-height: 60vh;
+    object-fit: contain;
 }
 
 input[type="file"] {
@@ -51,14 +51,20 @@ button {
     border-radius: 5px;
     font-size: 1.1rem;
     cursor: pointer;
+    touch-action: manipulation;
+    transition: background 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
     background: #c62828;
+    transform: translateY(-2px);
 }
 
 /* Very small screens (mobile) */
 @media (min-width: 250px) and (max-width: 399px) {
+    body {
+        background-attachment: scroll;
+    }
     .container {
          width: 65%;
         padding: 1.5vw;
@@ -75,6 +81,9 @@ button:hover {
 
 /* Mobile phones */
 @media (max-width: 480px) {
+    body {
+        background-attachment: scroll;
+    }
     .container {
         width: 95%;
         padding: 2vw;
