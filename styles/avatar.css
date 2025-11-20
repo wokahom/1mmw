@@ -1,0 +1,87 @@
+body {
+        margin: 0;
+        padding: 0;
+        background: url("assets/images/bg2.png") no-repeat center center fixed;
+        background-size: cover;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+}
+
+.container {
+    width: 95%;
+    max-width: 450px;
+    margin: auto;
+    padding: 20px;
+    background: rgb(240, 240, 240);
+    border-radius: 10px;
+}
+
+.canvas-wrapper {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+canvas {
+    width: 100%;
+    height: auto;
+}
+
+input[type="file"] {
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 12px 20px;
+    background: #e53935;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #c62828;
+}
+
+/* Responsive */
+    @media (max-width: 980px){
+      .hero-grid{grid-template-columns:1fr}
+      .contact{grid-template-columns:1fr}
+      .grid-3{grid-template-columns:1fr 1fr}
+      .footer-grid{grid-template-columns:1fr 1fr}
+      .menu{display:none}
+      .hamburger{display:block}
+    }
+    @media (max-width: 640px){
+      .grid-3{grid-template-columns:1fr}
+      .footer-grid{grid-template-columns:1fr}
+    } 
+
+    /* Responsive Styles for Mobile only */
+  @media(min-width: 250px) and (max-width: 399px) {
+
+
+/* HEADER */
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #ffffff;
+        padding: 10px 0;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
