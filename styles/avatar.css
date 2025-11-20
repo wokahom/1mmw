@@ -68,6 +68,8 @@ button:hover {
     .container {
          width: 65%;
         padding: 1.5vw;
+        margin-left: auto;
+        margin-right: auto;
     }
     button {
         font-size: 0.6rem;
@@ -87,6 +89,8 @@ button:hover {
     .container {
         width: 95%;
         padding: 2vw;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     button {
@@ -104,6 +108,8 @@ button:hover {
     .container {
         width: 95%;
         padding: 3vw;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     button {
