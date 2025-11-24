@@ -76,6 +76,9 @@ button:hover {
         font-size: 0.9rem;
         padding: 0.7rem 1rem;
     }
+    .download-share {
+        font-size: 1rem;
+    }
 }
 
 /* Tablets */
@@ -86,5 +89,8 @@ button:hover {
     }
     body {
         background-attachment: scroll !important;
+    }
+    .download-share {
+        font-size: 1.5rem;
     }
 }
