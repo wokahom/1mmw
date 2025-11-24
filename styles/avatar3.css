@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../assets/images/bg1.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+/* Main container */
+.container {
+    width: 95%;
+    max-width: 450px;
+    margin: 50px auto;
+    padding: 4vw;
+    background: rgba(240, 240, 240, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Canvas wrapper */
+.canvas-wrapper {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+canvas {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Buttons */
+button {
+    margin-top: 15px;
+    padding: 0.8rem 1.2rem;
+    background: #e53935;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    touch-action: manipulation;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: #c62828;
+    transform: translateY(-2px);
+}
+
+.download-share {
+    background-color: #fff;
+    font-size: 2rem;
+    padding: 10px;
+    margin: 30px;
+    text-align: center;
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+    body {
+        background-attachment: scroll !important;
+    }
+    .container {
+        padding: 3vw;
+    }
+    button {
+        font-size: 0.9rem;
+        padding: 0.7rem 1rem;
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 4vw;
+    }
+    body {
+        background-attachment: scroll !important;
+    }
+}
