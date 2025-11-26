@@ -101,7 +101,7 @@ button:hover {
     .container {
         width: 90%;
         padding: 1.8vw;
-        margin: 0 auto;
+        margin: 4vw auto;
     }
 
     button {
@@ -119,7 +119,7 @@ button:hover {
     .container {
         width: 90%;
         padding: 2vw;
-        margin: 0 auto;  /* centers horizontally */
+        margin: 4vw auto;  /* centers horizontally */
     }
     button {
         font-size: 0.9rem;
@@ -135,7 +135,7 @@ button:hover {
     .container {
         width: 90%;
         padding: 3vw;
-         margin: 0 auto;  /* centers horizontally */
+         margin: 4vw auto;  /* centers horizontally */
     }
     body {
         background-attachment: scroll !important;
