@@ -1,3 +1,4 @@
+/* GLOBAL STYLES */
 body {
     margin: 0;
     padding: 0;
@@ -7,44 +8,41 @@ body {
     background-size: cover;
     background-attachment: fixed;
     font-family: Arial, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
 }
 
-* {
-    box-sizing: border-box;
-}
-
-/* Main container */
+/* CONTAINER – MOBILE FIRST */
 .container {
-    width: 95%;
+    width: 92%;
     max-width: 450px;
     margin: 40px auto;
-    padding: 4vw;
+    padding: 5vw;
     background: rgba(240, 240, 240, 0.95);
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
-/* Canvas wrapper */
+/* CANVAS */
 .canvas-wrapper {
     width: 100%;
     overflow: hidden;
     margin-bottom: 20px;
     border-radius: 10px;
-    display: flex;
-    justify-content: center;
 }
 
 canvas {
     width: 100%;
     height: auto;
-    object-fit: contain;
 }
 
-/* Buttons */
+/* BUTTON */
 button {
     margin-top: 15px;
-    padding: 0.8rem 1.2rem;
+    padding: 1rem 1.5rem;
     background: #e53935;
     border: none;
     color: #fff;
@@ -60,48 +58,28 @@ button:hover {
     transform: translateY(-2px);
 }
 
+/* DOWNLOAD / SHARE BUTTON */
 .download-share {
     background-color: #fff;
     font-size: 2rem;
-    padding: 10px;
-    margin: 25px;
-    text-align: center;
-    font-weight: 700;
+    padding: 15px;
+    margin: 30px;
 }
 
-
-.glow-text {
-    padding: 12px 20px;
-    font-size: 1.3rem;
-    font-weight: bold;
-    color: white;
-    background: #c62828;
-    border-radius: 8px;
-    animation: pulseGlow 2s infinite;
-
-    margin: 3.5vw;
-    text-align: center;
-}
-
-@keyframes pulseGlow {
-    0% { box-shadow: 0 0 0px rgba(255, 50, 50, 0.6); }
-    50% { box-shadow: 0 0 20px rgba(255, 50, 50, 1); }
-    100% { box-shadow: 0 0 0px rgba(255, 50, 50, 0.6); }
-}
-
-
-
+/* ---------------------------------- */
+/* RESPONSIVENESS BREAKPOINTS */
+/* ---------------------------------- */
 
 /* Small phones */
-@media (max-width: 399px) {
+@media (max-width: 400px) {
     body {
         background-attachment: scroll;
     }
 
     .container {
-        width: 90%;
-        padding: 1.8vw;
-        margin: 0 auto;
+        width: 95%;
+        padding: 4vw;
+        margin: 20px auto;
     }
 
     button {
@@ -110,23 +88,17 @@ button:hover {
     }
 }
 
-
-/* Mobile phones */
+/* Regular phones */
 @media (max-width: 480px) {
-    body {
-        background-attachment: scroll !important;
-    }
     .container {
-        width: 90%;
-        padding: 2vw;
-        margin: 0 auto;  /* centers horizontally */
+        width: 95%;
+        padding: 4vw;
+        margin: 20px auto;
     }
+
     button {
         font-size: 0.9rem;
         padding: 0.7rem 1rem;
-    }
-    .download-share {
-        font-size: 1rem;
     }
 }
 
@@ -135,14 +107,9 @@ button:hover {
     .container {
         width: 90%;
         padding: 3vw;
-         margin: 0 auto;  /* centers horizontally */
+        margin: 30px auto;
     }
-    body {
-        background-attachment: scroll !important;
-    }
-    .download-share {
-        font-size: 1.2rem;
-    }
+
     button {
         font-size: 1rem;
         padding: 0.9rem 1.2rem;
