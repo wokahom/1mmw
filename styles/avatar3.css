@@ -75,7 +75,7 @@ button:hover {
     font-size: 1.3rem;
     font-weight: bold;
     color: white;
-    background: #c62828;
+    background: black;
     border-radius: 8px;
     animation: pulseGlow 2s infinite;
 
@@ -135,6 +135,9 @@ button:hover {
         bottom: 20px;
         right: 15px;
     }
+    .glow-text {
+        font-size: 1.1rem;
+    }
 }
 
 
@@ -161,6 +164,9 @@ button:hover {
         bottom: 20px;
         right: 15px;
     }
+    .glow-text {
+        font-size: 1.1rem;
+    }
 }
 
 /* Tablets */
@@ -185,5 +191,8 @@ button:hover {
         font-size: 0.9rem;
         bottom: 20px;
         right: 15px;
+    }
+    .glow-text {
+        font-size: 1.2rem;
     }
 }
