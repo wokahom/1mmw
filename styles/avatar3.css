@@ -10,6 +10,10 @@ body {
     min-height: 100vh;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 /* Main container */
 .container {
     width: 95%;
@@ -71,10 +75,9 @@ button:hover {
         background-attachment: scroll !important;
     }
     .container {
-        padding: 3vw;
-        margin-left: 20px;
-        margin-right: 20px;
-        
+        width: 90%;
+        padding: 2vw;
+        margin: 0 auto;  /* centers horizontally */
     }
     button {
         font-size: 0.9rem;
@@ -89,10 +92,8 @@ button:hover {
 @media (max-width: 768px) {
     .container {
         width: 95%;
-        padding: 4vw;
-        margin-left: 20px;
-        margin-right: 20px;
-       
+        padding: 3vw;
+         margin: 0 auto;  /* centers horizontally */
     }
     body {
         background-attachment: scroll !important;
