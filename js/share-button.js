@@ -1,11 +1,16 @@
-document.getElementById("shareBtn").addEventListener("click", () => {
+document.getElementById("shareBtn").addEventListener("click", async () => {
     if (navigator.share) {
-        navigator.share({
-            title: "One Million Man Worship",
-            text: "I will be there LIVE! 19th–21st Dec 2025 @ Yakubu Gowon Stadium PH.",
-            url: window.location.href
-        }).catch(err => console.log("Share failed:", err));
+        try {
+            await navigator.share({
+                title: "Create Your Avatar",
+                text: "Try this amazing avatar generator!",
+                url: window.location.href
+            });
+            console.log("Shared successfully!");
+        } catch (error) {
+            console.log("Share cancelled or failed", error);
+        }
     } else {
-        alert("Sharing not supported on this device.");
+        alert("Your browser does not support sharing.");
     }
 });
